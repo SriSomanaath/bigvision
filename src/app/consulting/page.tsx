@@ -8,32 +8,23 @@ import { Hero1 } from "@/components/common/hero";
 import { PricingSectionDemo } from "@/components/sections/main-page/workspace";
 import { HeroVideoDialog } from "@/components/ui/hero-video-dialog";
 import React from "react";
+import { AnimatedBeamDemo } from "@/components/sections/consulting/timeline";
 
 export default function Home() {
   return (
     <>
       <Hero1
         // badge="🚀 New Feature!"
-        heading="Go to market, supercharged by AI."
-        description="We provide consulting services in AI, Computer Vision & Deep Learning."
-        buttons={{
-          primary: {
-            text: "Learn More",
-            url: "/learn-more",
-          },
-          secondary: {
-            text: "Get Started",
-            url: "/get-started",
-          },
-        }}
+        heading="We Think Deep.
+        We Research Hard.
+        We Move Fast."
+        description="We build end-to-end solutions in AI, Computer Vision & Deep Learning."
         image={{
           src: "/your-image.jpg",
           alt: "Custom Hero Image",
         }}
       />
-      <ClientLabel />
-      <FeaturesSectionWithHoverEffectsDemo />
-      <TimelineDemo />
+      <AnimatedBeamDemo />
       <CarouselSpacing />
       <PricingSectionDemo />
       <CTA1 />
